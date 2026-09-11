@@ -35,9 +35,16 @@ rayon = { workspace = true }
 wasm-encoder = { path = "../wasm-encoder" }
 wast = { path = "../wast" }
 wat = { path = "../wat" }
+hypobench-harness = "0.5.1"
+
 
 [[bench]]
 name = "benchmark"
+harness = false
+
+
+[[bench]]
+name = "vibe_bench"
 harness = false
 
 [features]
